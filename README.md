@@ -1,42 +1,32 @@
+# Developing Extensions in JupyterLab
+
+JupyterLab is a fun web-based user interface for scientists, developers and designers for exploration, analysis, visualization. It is a flexible and highly extensible set of components that allows users to customize and enhance the existing experience. In this tutorial, attendees will be guided through the process of creating a basic extension and taught about the core APIs that power JupyterLab.
+
+
 [Binder](https://gke.mybinder.org/v2/gh/deathbeds/_fam/07-25-2020?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmarthacryan%252Fjupytercon2020-developingextensions%26urlpath%3Dlab%252Ftree%252Fjupytercon2020-developingextensions%252Freadme.md%26branch%3Dmaster)
 
-# JupyterCon Tutorial
 
-[JupyterCon](https://jupytercon.com) will use this template to create a new repository for each tutorial, with speakers added as collaborators. 
+## Agenda
 
-We also include here [instructions for tutorial speakers](https://github.com/jupytercon/tutorial2020/blob/master/Tutorial_Speakers_Guide.md). 
-Please follow these instructions carefully, and email us if you have questions: [jupytercon-tutorials@numfocus.org](mailto:jupytercon-tutorials@numfocus.org)
+* Introducing the instructors
+    We'll meet our workshop instructors and guests. We'll discuss their work in software and Jupyter. Specifically, we'll get to "what made extensions click."
+* Exploring extensions
+    * What are extensions?
+    * How have they improved over Jupyter versions?
+    * Extensions, plugins and widgets
+    * An advanced extension: DrawIO
+    * Visualizing Proteins
+* Anatomy of an extension.
+    * Css themes light/dark/custom
+    * Mime Renderer Extension
+* What to do when things go wrong?
+    * Good documentation for developing extensions.
+    * Jupyter community links
+    * More examples!
 
-You can delete this file (or rename it) and replace it by a README file that targets the contents of this repository, populated with your tutorial materials.
+## About the Instructors
 
-## Tutorial Chairs for 2020
 
-- Tania Allard, Microsoft
-- Gerard Gorman, University College London
-
-## General information
-
-JupyterCon 2020 is an online event that places heavy emphasis on providing learning opportunities for all participants. 
-It is a project of [NumFOCUS](https://numfocus.org), with a fully volunteer team of organizers.
-
-### What is NumFOCUS?
-
-> NumFOCUS is a 501(c)-3 non-profit in the United States. 
-Its mission is to promote open practices in research, data, and scientific computing by serving as a fiscal sponsor for open source projects and organizing community-driven educational programs. 
-NumFOCUS envisions an inclusive scientific and research community that utilizes actively supported open source software to make impactful discoveries for a better world.
-
-## Format for tutorials
-
-Tutorials will consist of on-demand video presentations, and written materials presented in Jupyter notebooks. 
-The notebooks should be complete and polished, amply narrated worked-out examples and exercises for participants. 
-
-Tutorial basic format:
-
-- Three or four Jupyter notebooks (at minimum), each notebook corresponding to "one lesson" – printed, estimate between 10–20 pages, or 17 to 35 min to read, per notebook.
-- Estimate for the material to be 1.5 to 3 hours to work through interactively.
-- The notebooks are complemented with videos, 25–30 min in length (not longer); at least one video per notebook.
-- Optional exercises for participants, instrumented for auto-grading.
-- One full tutorial may add up to total-time-on-task by the learners of about 4.5 hours.
 
 ## License
 
