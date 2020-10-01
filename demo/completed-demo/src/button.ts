@@ -19,13 +19,25 @@ import { DocumentRegistry } from "@jupyterlab/docregistry";
 import { INotebookModel, NotebookPanel } from "@jupyterlab/notebook";
 import { IDisposable } from "@lumino/disposable";
 
+import { NotebookParser } from "./parsing";
+
 export class ButtonExtension implements DocumentRegistry.IWidgetExtension<NotebookPanel, INotebookModel> {
+
+  onClick(panel: NotebookPanel): void {
+      let notebookStr = panel.content.model.toString();
+
+      let envVars = NotebookParser.getEnvVars(notebookStr);
+
+      let alertStr = 'Found the following env vars:\n' + envVars.join('\n');
+
+      alert(alertStr);
+  }
 
   createNew(panel: NotebookPanel, context: DocumentRegistry.IContext<INotebookModel>): IDisposable {
     // Create the toolbar button
     let mybutton = new ToolbarButton({
-        label: 'My Button',
-        onClick: () => alert('You did it!')
+        label: 'Find Env Vars',
+        onClick: () => this.onClick(panel)
     });
 
     // Add the toolbar button to the notebook toolbar
