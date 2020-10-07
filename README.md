@@ -30,5 +30,6 @@ JupyterLab is a fun web-based user interface for scientists, developers and desi
 
 ## License
 
-The source materials for JupyterCon tutorials are copyright of their authors. 
-We ask that materials be shared under standard public licenses. We recommend code be under BSD-3 or MIT license, and other materials be under a CC-BY Creative Commons Attribution license.
+The source materials for JupyterCon tutorials are copyright of their authors.
+
+[Apache 2.0](LICENSE)
