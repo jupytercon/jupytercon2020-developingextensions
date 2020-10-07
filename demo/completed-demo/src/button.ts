@@ -15,8 +15,10 @@
  */
 
 import { ToolbarButton } from "@jupyterlab/apputils";
+import { URLExt } from '@jupyterlab/coreutils';
 import { DocumentRegistry } from "@jupyterlab/docregistry";
 import { INotebookModel, NotebookPanel } from "@jupyterlab/notebook";
+import { ServerConnection } from '@jupyterlab/services';
 import { IDisposable } from "@lumino/disposable";
 
 import { NotebookParser } from "./parsing";
@@ -33,11 +35,18 @@ export class ButtonExtension implements DocumentRegistry.IWidgetExtension<Notebo
       alert(alertStr);
   }
 
+  async makeServerRequest(): Promise<void> {
+    let settings = ServerConnection.makeSettings({});
+    let serverResponse = await ServerConnection.makeRequest(
+      URLExt.join(settings.baseUrl, '/mybutton/hello'), { method: 'GET' }, settings);
+    alert (await serverResponse.text());
+  }
+
   createNew(panel: NotebookPanel, context: DocumentRegistry.IContext<INotebookModel>): IDisposable {
     // Create the toolbar button
     let mybutton = new ToolbarButton({
         label: 'Find Env Vars',
-        onClick: () => this.onClick(panel)
+        onClick: () => this.makeServerRequest()
     });
 
     // Add the toolbar button to the notebook toolbar

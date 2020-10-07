@@ -2,9 +2,9 @@ from .handlers import TutorialHandler
 
 def _jupyter_server_extension_points():
     return [{
-        'module': 'mybutton'
+        "module": "mybutton"
     }]
 
-def _load_jupyter_server_extension(server_app):
-    handlers = [('/mybutton/hello', TutorialHandler)]
-    server_app.web_app.add_handlers('.*$', handlers)
+def load_jupyter_server_extension(server_app):
+    handlers = [("/mybutton/hello", TutorialHandler)]
+    server_app.web_app.add_handlers(".*$", handlers)

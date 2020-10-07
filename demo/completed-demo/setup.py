@@ -5,8 +5,8 @@ setup(
     include_package_data=True,
     data_files=[
         (
-            "mybutton",
-            ["mybutton.json"]
+            "etc/jupyter/jupyter_server_config.d",
+            ["jupyter-config/jupyter_server_config.d/mybutton.json"]
         ),
     ]
 )
