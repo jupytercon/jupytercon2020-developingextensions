@@ -9,24 +9,25 @@ JupyterLab is a fun web-based user interface for scientists, developers and desi
 ## Agenda
 
 * Introducing the instructors
-    We'll meet our workshop instructors and guests. We'll discuss their work in software and Jupyter. Specifically, we'll get to "what made extensions click."
-* [Exploring extensions](./notebooks/1-extensions.md.ipynb)
-    * What are extensions?
-    * How have they improved over Jupyter versions?
-    * Extensions, plugins and widgets
-    * An advanced extension: DrawIO
-    * Visualizing Proteins
-* [Anatomy of an extension.](./notebooks/2-anatomy.md.ipynb)
-    * Css themes light/dark/custom
-    * Mime Renderer Extension
-* [What to do when things go wrong?](./notebooks/3-docs-and-debugging.md.ipynb)
-    * Good documentation for developing extensions.
-    * Jupyter community links
-    * More examples!
+* Lab Extensions
+* Server Extensions
+* Debugging
+* Bringing together lab and server extensions
 
 ## About the Instructors
 
-
+* Alex Bozarth
+    * Alex Bozarth is a software engineer at the [IBM Center for Open Source Data and AI Technologies (CODAIT)](https://www.ibm.com/opensource/centers/codait/). He is a PPMC for [Apache Livy](https://livy.apache.org), a part of the Apache Spark ecosystem. He is currently active in the [JupyterLab project](https://jupyterlab.readthedocs.io/en/stable/) and [Elyra](https://elyra.readthedocs.io/en/latest/), a suite of JupyterLab extensions.
+    * ajbozart@us.ibm.com
+* Karla Spuldaro
+    * Open Source Software Developer at IBM. Contributes to the JupyterLab Ecosystem projects.
+    * karla.spuldaro@ibm.com
+* Martha Cryan
+    * Martha Cryan is a software engineer at the [IBM Center for Open Source Data and AI Technologies (CODAIT)](https://www.ibm.com/opensource/centers/codait/), working on [Elyra](https://github.com/elyra-ai/elyra). I recently graduated from Carnegie Mellon University, and I live in Austin, Texas.
+    * martha.cryan@ibm.com
+* Max Klein
+    * Biophysics PhD, Jupyterlab maintainer, and developer at JPMorgan Chase (as part of the Athena Research team). My current primary project is [JupyterFS](https://github.com/jpmorganchase/jupyter-fs) and the Jupyterlab filesystem. I spend a lot of time thinking deeply about the future of file and data handling in Jupyter.
+    * telamonian@hotmail.com
 
 ## License
 
