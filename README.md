@@ -32,4 +32,4 @@ JupyterLab is a fun web-based user interface for scientists, developers and desi
 
 The source materials for JupyterCon tutorials are copyright of their authors.
 
-[Apache 2.0](LICENSE)
+[Apache 2.0](LICENSE.txt)
