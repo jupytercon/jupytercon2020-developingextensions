@@ -2,9 +2,7 @@
 
 JupyterLab is a fun web-based user interface for scientists, developers and designers for exploration, analysis, visualization. It is a flexible and highly extensible set of components that allows users to customize and enhance the existing experience. In this tutorial, attendees will be guided through the process of creating a basic extension and taught about the core APIs that power JupyterLab.
 
-
-[Binder](https://gke.mybinder.org/v2/gh/deathbeds/_fam/07-25-2020?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmarthacryan%252Fjupytercon2020-developingextensions%26urlpath%3Dlab%252Ftree%252Fjupytercon2020-developingextensions%README.md%26branch%3Dmaster)
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marthacryan/jupytercon2020-developingextensions/master?urlpath=lab/tree/README.md)
 
 ## Agenda
 
