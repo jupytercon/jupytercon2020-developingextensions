@@ -42,11 +42,29 @@ export class ButtonExtension implements DocumentRegistry.IWidgetExtension<Notebo
     alert (await serverResponse.text());
   }
 
+  async showEnvVars(panel: NotebookPanel): Promise<void> {
+    let notebookStr = panel.content.model.toString();
+    let envVars = NotebookParser.getEnvVars(notebookStr);
+
+    let settings = ServerConnection.makeSettings({});
+    let serverResponse = await ServerConnection.makeRequest(
+      URLExt.join(settings.baseUrl, '/mybutton/hello'), { method: 'POST', body: JSON.stringify(envVars) }, settings);
+
+    let alertStr = 'Env Var Values:';
+
+    let res = await serverResponse.json();
+    for (const [key, value] of Object.entries(res)) {
+      alertStr += '\n' + key + ' = ' + value;
+    }
+
+    alert (alertStr);
+  }
+
   createNew(panel: NotebookPanel, context: DocumentRegistry.IContext<INotebookModel>): IDisposable {
     // Create the toolbar button
     let mybutton = new ToolbarButton({
-        label: 'Find Env Vars',
-        onClick: () => this.makeServerRequest()
+        label: 'Show Env Vars',
+        onClick: () => this.showEnvVars(panel)
     });
 
     // Add the toolbar button to the notebook toolbar
